@@ -1,0 +1,21 @@
+{
+  "name": "cross-chain-transaction",
+  "version": "1.0.0",
+  "description": "Automated transaction script for cross-chain token bridging using ethers.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node scripts/sendTransaction.ts",
+    "test": "jest --config jest.config.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^22.5.4",
+    "jest": "^27.0.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
