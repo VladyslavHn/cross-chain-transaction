@@ -29,9 +29,7 @@ async function sendSwapAndBridgeTransaction() {
   console.log(`Token Name: ${TOKEN_NAME}`);
 
   try {
-    console.log(`Initiating token swap...`);
     const swapTx = await swapContract.swapTokens("0xrecipientAddress", ethers.utils.parseUnits("10", TOKEN_DECIMALS));
-    console.log(`Swap Transaction sent with hash: ${swapTx.hash}`);
 
     const swapReceipt = await swapTx.wait();
     if (swapReceipt.status === 1) {
